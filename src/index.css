@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: #000;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.coming-soon {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff4d88, #ff8ec7);
+  color: white;
+  text-align: center;
+}
+
+.coming-soon h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.coming-soon p {
+  font-size: 24px;
+}npm 
+body{
+
+background:linear-gradient(
+
+135deg,
+
+#ff4d88,
+
+#ff85b3,
+
+#ffd6e8
+
+);
+
+overflow:hidden;
+
+}

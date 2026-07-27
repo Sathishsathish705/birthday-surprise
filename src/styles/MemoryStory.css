@@ -1,0 +1,287 @@
+/* ===========================
+   MEMORY STORY PAGE
+=========================== */
+
+.story-page{
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(135deg,#ffd6e7,#fff0f6);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    font-family:Poppins,sans-serif;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.story-title{
+    font-size:42px;
+    color:#ff2f85;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+/* ===========================
+   MAIN CARD
+=========================== */
+
+.story-card{
+    width:95%;
+    max-width:1300px;
+    background:#fff;
+    border-radius:30px;
+    padding:30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+
+/* ===========================
+   LEFT SIDE
+=========================== */
+
+.photo-side{
+    width:45%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Romantic Frame */
+
+.photo-frame{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    background:white;
+
+    border:8px solid #ff4d94;
+
+    box-shadow:
+    0 0 25px rgba(255,0,120,.25),
+    0 0 50px rgba(255,0,120,.15);
+
+}
+
+/* ===========================
+   PHOTO
+=========================== */
+
+.story-image{
+
+    width:100%;
+
+    height:600px;
+
+    object-fit:contain;
+
+    object-position:center;
+
+    background:white;
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.text-side{
+
+    width:55%;
+
+}
+
+/* Counter */
+
+.memory-count{
+
+    color:#ff2f85;
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+/* Title */
+
+.memory-title{
+
+    color:#ff2f85;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+/* Message */
+
+.memory-message{
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    line-height: 1.8;
+    color: #444;
+    text-align: left;
+}
+
+/* Typewriter Cursor */
+
+.memory-message::after{
+
+    content:"|";
+
+    color:#ff2f85;
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:0;
+
+}
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.story-buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.story-buttons button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#ff2f85;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.story-buttons button:hover{
+
+    background:#ff0066;
+
+    transform:scale(1.05);
+
+}
+
+.story-buttons button:disabled{
+
+    background:#cfcfcf;
+
+    cursor:not-allowed;
+
+}
+
+.music-btn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:#ff2f85;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+.story-card{
+
+flex-direction:column;
+
+}
+
+.photo-side,
+.text-side{
+
+width:100%;
+
+}
+
+.story-image{
+
+height:420px;
+
+}
+
+.memory-title{
+
+font-size:30px;
+
+}
+
+.memory-message{
+
+font-size:18px;
+
+min-height:auto;
+
+}
+
+.story-buttons{
+
+flex-direction:column;
+
+}
+
+.story-buttons button{
+
+width:100%;
+
+}
+
+.story-title{
+
+font-size:30px;
+
+}
+
+}
