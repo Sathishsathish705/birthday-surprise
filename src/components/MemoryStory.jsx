@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../styles/memoryStory.css";
+import "../styles/MemoryStory.css";
 
 export default function MemoryStory({ onFinish }) {
 
